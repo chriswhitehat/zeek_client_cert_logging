@@ -1,2 +1,2 @@
-@load ./zeek-client-cert-logging.zeek
+@load ./zeek_client_cert_logging.zeek
 

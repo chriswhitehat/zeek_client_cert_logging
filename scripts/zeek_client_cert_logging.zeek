@@ -6,6 +6,6 @@ redef SSL::log_client_cert = T;
 
 event zeek_init()
     {
-    print "zeek-client-cert-logging package: SSL::log_client_cert enabled";
+    print "zeek_client_cert_logging package: SSL::log_client_cert enabled";
     }
 

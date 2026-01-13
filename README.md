@@ -1,4 +1,4 @@
-# zeek-client-cert-logging (Zeek ZKG package)
+# zeek_client_cert_logging (Zeek ZKG package)
 
 Enables TLS client certificate logging in Zeek by setting:
 

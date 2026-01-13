@@ -1,0 +1,7 @@
+package {
+    name = "client-cert-logging";
+    version = "0.1.0";
+    summary = "Enable TLS client certificate logging so mTLS client certs show up in ssl/tls + x509 logs.";
+    description = "Loads Zeek base SSL and X509 frameworks and enables SSL::log_client_cert (client cert chain logging).";
+    tags = { "tls", "ssl", "x509", "mtls", "logging" };
+}

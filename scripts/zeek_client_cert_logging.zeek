@@ -1,11 +1,10 @@
 @load base/protocols/ssl
-@load base/files/x509
+@load base/protocols/ssl/files
 
-# Ensure Zeek logs TLS client certificates (when presented, i.e., mTLS).
-redef SSL::log_client_cert = T;
+# Optional: include client cert subject/issuer directly in ssl.log (rarely present; useful for mTLS).
+redef SSL::log_include_client_certificate_subject_issuer = T;
 
 event zeek_init()
     {
-    print "zeek_client_cert_logging package: SSL::log_client_cert enabled";
+    print "client-cert-logging: loaded base/protocols/ssl/files; enabled client subject/issuer logging";
     }
-
